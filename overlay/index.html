@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- © 2026 Mathew. All rights reserved. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StreamKit Overlay</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div id="lily" class="lily">
+    <div class="avatar" id="lily-avatar" hidden>
+      <img id="lily-img-idle" src="/lily/idle.png" alt="" />
+      <img id="lily-img-talk" src="/lily/talk.png" alt="" hidden />
+      <video id="lily-vid-idle" src="/lily/idle.webm" autoplay muted loop playsinline hidden></video>
+      <video id="lily-vid-talk" src="/lily/talk.webm" muted loop playsinline hidden></video>
+    </div>
+    <div class="holo">
+      <div class="ring r1"></div>
+      <div class="ring r2"></div>
+      <div class="ring r3"></div>
+      <div class="core"></div>
+      <div class="bars"><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
+    <div class="caption" id="lily-caption">
+      <span class="lily-name">LILY</span>
+      <span class="lily-text" id="lily-text"></span>
+    </div>
+  </div>
+
+  <div id="alert" class="alert" aria-live="polite">
+    <div class="frame">
+      <div class="scanline"></div>
+      <div class="head">
+        <span class="tag" id="tag">FOLLOW</span>
+        <span class="glitch" id="title" data-text=""></span>
+      </div>
+      <div class="sub" id="subtitle"></div>
+    </div>
+  </div>
+  <script src="/overlay.js"></script>
+</body>
+</html>

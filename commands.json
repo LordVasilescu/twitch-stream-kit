@@ -1,0 +1,9 @@
+{
+  "commands": {
+    "hello": "Welcome to the stream, {user}! ⚡",
+    "discord": "Join the crew: <put your invite here>",
+    "specs": "Rig: RTX 5090 // edit me in commands.json",
+    "socials": "Follow everywhere @ <your handle>"
+  },
+  "timers": []
+}
